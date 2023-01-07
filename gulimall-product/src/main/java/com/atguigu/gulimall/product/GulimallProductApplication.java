@@ -30,10 +30,20 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  *          给校验注解标注什么情况需要进行校验
  *      2.@Validated({AddGroup.class})
  *      3.默认没有指定分组的校验注解@NotBlank，在分组校验的情况下不生效，只会在@Validated生效
+ *  5）自定义校验
+ *      1）编写一个自定义的校验注解
+ *      2）编写一个自定义的校验器
+ *      3）关联自定义的校验器和自定义的校验注解
+ *      @Documented
+ *      @Constraint(validatedBy = { ListValueConstraintValidator.class 【可以指定多个不同的校验器，适配不同类型的校验】})
+ *      @Target({ METHOD, FIELD, ANNOTATION_TYPE, CONSTRUCTOR, PARAMETER, TYPE_USE })
+ *      @Retention(RUNTIME)
+ *      public @interface ListValue {
  *
  * 4.统一的异常处理
  *  @ControllerAdvice
  *  1）抽取一个异常处理类
+ *
  */
 @MapperScan("com.atguigu.gulimall.product.dao")
 @SpringBootApplication
