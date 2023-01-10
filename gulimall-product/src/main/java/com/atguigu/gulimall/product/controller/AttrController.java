@@ -4,6 +4,7 @@ import com.atguigu.common.utils.PageUtils;
 import com.atguigu.common.utils.R;
 import com.atguigu.gulimall.product.entity.AttrEntity;
 import com.atguigu.gulimall.product.service.AttrService;
+import com.atguigu.gulimall.product.vo.AttrGroupRelationVo;
 import com.atguigu.gulimall.product.vo.AttrRespVo;
 import com.atguigu.gulimall.product.vo.AttrVo;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
@@ -70,6 +71,10 @@ public class AttrController {
 
         return R.ok();
     }
+
+    // /product/attrgroup/attr/relation/delete
+
+
 
     /**
      * 修改
