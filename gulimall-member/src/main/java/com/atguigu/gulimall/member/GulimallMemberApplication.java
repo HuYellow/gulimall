@@ -15,7 +15,7 @@ import org.springframework.context.annotation.ComponentScan;
  */
 
 @EnableFeignClients(basePackages = "com.atguigu.gulimall.member.feign")
-//@EnableDiscoveryClient
+@EnableDiscoveryClient
 @SpringBootApplication
 public class GulimallMemberApplication {
 
