@@ -1,2 +1,2 @@
-# gulimall
-谷粒商城项目学习
+# Longpai Mall
+商城项目学习
